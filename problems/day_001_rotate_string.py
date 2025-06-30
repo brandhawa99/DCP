@@ -10,6 +10,7 @@ Example:
 
 def can_rotate_to_match(A: str, B: str) -> bool:
     # Rotation trick: if B is a rotation of A, it must be a substring of A+A
+    # abcabc contains all rotations of "abc"
     if len(A) != len(B):
         return False
     return B in (A + A)
